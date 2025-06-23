@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: relative;
+    background: #fff;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    padding: 0 160px;
+}
+
+a{
+    position: relative;
+    text-decoration:none ;
+    color: #000;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+header {
+    position: relative;
+    background: #eee;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 30px;
+}
+
+header span {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header i {
+    position: relative;
+    font-size: 20px;
+
+}
+
+header i:first-child {
+    top: 2px;
+    font-size: 26px;
+}
+
+header i:last-child {
+    font-size: 25px;
+}
+
+header .head-icon  {
+    position: relative;
+    display: block;
+    gap:10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+header .head-icon i:first-child {
+    top: 2px;
+    font-size: 26px;
+}
+
+
+header .head-icon span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 14px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:red;
+    display: block;
+    
+}
+header .head-icon i{
+    font-size: 19px;
+}
+
+/*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.hero .write-up {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 50%;
+    left: 25%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero .write-up h1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    line-height: 45px;
+    font-size: 40px
+}
+
+/*/////////////////////////////////*/
+/*/////////////////////////////////*/
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    background: #eee;
+    margin-bottom: 200px;
+    border-radius: 25px;
+}
+
+.flex-wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    flex-wrap:wrap;
+    gap: 8px;
+}
+
+.flex-wrap .col {
+    position: relative;
+    width: 200px;
+    height: auto;
+    background: #fff;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.flex-wrap .col img {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.col .write-up {
+    position: relative;
+    padding: 0 10px 10px 10px;
+
+}
+
+.col .write-up p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.col .write-up span {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    line-height: 15px;
+    font-size: 12px;
+    color: #696969;
+}
+
+.food-menu .col .write-up i {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 0;
+    right: 0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.food-menu .col:hover .write-up{
+    font-size:22px;
+}
+
+
+
+
+/*//////////////////////////////////*/
+/*//////////////////////////////////*/
+
+
+footer {
+    position: relative;
+    background: #000;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    bottom: 0;
+}
+
+footer p:first-child {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 5px;
+}
+
+footer p:nth-child(2) {
+    position: relative;
+    top: 0px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.51);
+
+}
+
+ul li {
+    list-style: none;
+
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+}

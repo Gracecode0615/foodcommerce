@@ -1,0 +1,4 @@
+
+CREATE TABLE `foodcommerce`.`users` (`id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(100) NOT NULL , `phone` VARCHAR(100) NOT NULL , `email` VARCHAR(100) NOT NULL , `reg_time` TIMESTAMP(6) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+IMAGE 
