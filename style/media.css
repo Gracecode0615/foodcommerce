@@ -1,0 +1,31 @@
+@media (min-width:0) and (max-width:600px) {
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+
+    }
+    header{
+        margin-bottom: 0;
+    }
+    .hero{
+        height: 60vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+    section{
+        width: 100%;
+        padding: 10px;
+    }
+    .food-menu .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+    .food-menu .flex-wrap .col {
+        width: 45%;
+    }

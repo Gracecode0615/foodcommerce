@@ -149,7 +149,7 @@ section {
     border-radius: 25px;
 }
 
-.flex-wrap {
+.food-menu .flex-wrap {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -160,7 +160,7 @@ section {
     gap: 8px;
 }
 
-.flex-wrap .col {
+.food-menu .flex-wrap .col {
     position: relative;
     width: 200px;
     height: auto;
@@ -173,7 +173,7 @@ section {
     
 }
 
-.flex-wrap .col img {
+.food-menu  .flex-wrap .col img {
     position: relative;
     width: 100%;
     height: 140px;
@@ -183,7 +183,7 @@ section {
     
 }
 
-.col .write-up {
+.food-menu  .flex-wrap .col .write-up {
     position: relative;
     padding: 0 10px 10px 10px;
 
