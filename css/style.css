@@ -2,8 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: none;
+    border: 0;
     font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dddddd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #e3e3e3;
+    border-radius: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 body {
@@ -14,7 +40,7 @@ body {
 main {
     position: relative;
     width: 100%;
-    padding: 0 160px;
+    padding: 0 60px;
 }
 
 a{
@@ -28,25 +54,29 @@ a{
 
 header {
     position: relative;
-    background: #eee;
     width: 100%;
     height: 70px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 30px;
+    padding: 0 35px;
 }
 
-header span {
+header .holder{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+header h2 {
     position: relative;
     font-size: 22px;
-    font-weight: 600;
+    cursor: pointer;
 }
 
 header i {
     position: relative;
     font-size: 20px;
-
 }
 
 header i:first-child {
@@ -54,11 +84,11 @@ header i:first-child {
     font-size: 26px;
 }
 
-header i:last-child {
+header .user {
     font-size: 25px;
 }
 
-header .head-icon  {
+header .cart-icon  {
     position: relative;
     display: block;
     gap:10px;
@@ -68,13 +98,12 @@ header .head-icon  {
     text-align: center;
 }
 
-header .head-icon i:first-child {
+header .cart-icon i:first-child {
     top: 2px;
     font-size: 26px;
 }
 
-
-header .head-icon span{
+header .cart-icon span{
     position: absolute;
     top: 0;
     right: 0;
@@ -86,7 +115,8 @@ header .head-icon span{
     display: block;
     
 }
-header .head-icon i{
+
+header .cart-icon i{
     font-size: 19px;
 }
 
@@ -97,9 +127,9 @@ header .head-icon i{
 .hero {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 320px;
     background: #000;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 25px;
     overflow: hidden;
     display: flex;
@@ -110,7 +140,7 @@ header .head-icon i{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -145,8 +175,9 @@ section {
     height: auto;
     max-height: auto;
     background: #eee;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     border-radius: 25px;
+    padding: 10px 0;
 }
 
 .food-menu .flex-wrap {
@@ -155,28 +186,26 @@ section {
     justify-content: flex-start;
     width: 100%;
     height: auto;
-    padding: 50px 100px;
+/*    padding: 50px 50px;*/
     flex-wrap:wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .food-menu .flex-wrap .col {
     position: relative;
-    width: 200px;
+    width: 22%;
     height: auto;
     background: #fff;
     margin: auto;
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 20px;
     cursor: pointer;
-    
 }
 
 .food-menu  .flex-wrap .col img {
     position: relative;
     width: 100%;
-    height: 140px;
+    height: 160px;
     object-fit: cover;
     display: block;
     margin-bottom: 10px;
@@ -185,7 +214,7 @@ section {
 
 .food-menu  .flex-wrap .col .write-up {
     position: relative;
-    padding: 0 10px 10px 10px;
+    padding: 5px 10px 10px 10px;
 
 }
 

@@ -1,18 +1,20 @@
+<?php
+$pagetitle = "Food items";
+$cartshow = "";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-     <meta http-equiv="X-UA-Compatible" content="IE=7">
-     
-    <title>View Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale, maximum-scale=1, shrink-to-fit=no">
 
-     <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>explore food</title>
 
-    <link rel="stylesheet" href="style/viewpage.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/viewpage.css" type="text/css">
 
-
-    <link rel="stylesheet" href="style/media.css">
-   
     <!--    bootstrap icon cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
@@ -22,41 +24,31 @@
 </head>
 
 <body>
+    
+    <?php include 'exe/heading.php'; ?>
+    
     <main>
 
-        <div class="cat-wrap">
-           
-            <div class="col">
-                <a href="index.html"><i class="bi bi-chevron-left"></i></a>
-
-                <div class="food-category">
-                    <span> Rice</span>
-                    <span>Protein</span>
-                    <span>Buger</span>
-                    <span>Pizza</span>
-                    <span>Seafood</span>
-                    <span>Swallows & Soups</span>
-                    <span>Fast Food</span>
-                    <span>Breakfast Meals</span>
-                    <span>Soups Only</span>
-                    <span>Snacks</span>
-                    <span>Local Delicacies</span>
-                </div>
-            </div>
-
-            <div class="col">
-                 <div class="head-icon">
-                   <a href="cart.html"> <i class="bi bi-basket3"></i></a>
-                <span></span>
-            </div>
-            </div>
-
+        <div class="food-category">
+            <span> Rice</span>
+            <span>Protein</span>
+            <span>Buger</span>
+            <span>Pizza</span>
+            <span>Seafood</span>
+            <span>Swallows & Soups</span>
+            <span>Fast Food</span>
+            <span>Breakfast Meals</span>
+            <span>Soups Only</span>
+            <span>Snacks</span>
+            <span>Local Delicacies</span>
         </div>
 
         <section>
+            
             <div class="preview-wrap">
+                
                 <div class="col">
-                    <h2>Jollof Rice and Prepared Turkey</h2>
+                    <h2>Jollof Rice</h2>
 
                     <span>Delicous Party Jolly</span>
 
@@ -80,7 +72,7 @@
                     <span>Delicous Party Jolly</span>
 
                     <p>NGN 500</p>
-                    
+
                 </div>
 
                 <div class="col">
@@ -100,7 +92,7 @@
                     <span>Delicous Party Jolly</span>
 
                     <p>NGN 500</p>
-                    
+
                 </div>
 
                 <div class="col">
@@ -111,7 +103,6 @@
                 </div>
 
             </div>
-
 
             <div class="preview-wrap">
                 <div class="col">
@@ -119,8 +110,8 @@
 
                     <span>Delicous Party Jolly</span>
 
-                    <p>NGN 500</p>            
-             </div>
+                    <p>NGN 500</p>
+                </div>
 
                 <div class="col">
 
@@ -131,19 +122,22 @@
                 </div>
 
             </div>
+            
         </section>
         <!--        ///////////////////////////-->
         <!--        ///////////////////////////-->
 
         <div class="food-detail" id="food-detail">
+            
+            <div class="overlay close-popup"></div>
+            
             <div class="container">
-                <span class="close-popup">&times;</span>
-
+                
                 <img src="https://media.istockphoto.com/id/1383962772/photo/nigerian-food.jpg?s=612x612&w=0&k=20&c=u-_1qwHBoY9Yh3alnsRbix6hxgl3_TXhT9lpEvlhH10=" alt="a plate of rice" alt="food image">
 
-                <h2> Fried Rice platter</h2>
+                <h2>Fried Rice platter</h2>
 
-                <span class="text">How many Quality of Fried Rice Platter do you want?</span>
+                <span class="text">How many Quality of product do you want?</span>
 
                 <span class="price">NGN 500</span>
 
@@ -156,9 +150,10 @@
 
                     <button id="btn">Add NGN 500</button>
                 </div>
+                
             </div>
+            
         </div>
-
 
     </main>
 
@@ -166,4 +161,6 @@
     <script src="js/script.js">
 
     </script>
-</body></html>
+</body>
+
+</html>

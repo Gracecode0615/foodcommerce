@@ -1,0 +1,87 @@
+@media (min-width:0) and (max-width: 1370px) {
+    .food-menu .flex-wrap {
+        padding: 10px;
+    }
+}
+
+@media (min-width:0) and (max-width: 900px) {
+    
+    main{
+        padding: 0 20px;
+    }
+    
+    .food-menu .flex-wrap .col {
+        width: 30%;
+    }
+
+    .hero .write-up {
+        width: 55%;
+        left: 36%;
+    }
+
+    .hero .write-up h1 {
+        font-size: 2.1rem;
+        line-height: 39px;
+    }
+}
+
+@media (min-width:0) and (max-width:600px) {
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+    }
+    
+    header {
+        padding: 0;
+    }
+
+    header .holder {
+        padding: 15px 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+        top: 5px;
+    }
+
+    /*    /////////////////////////*/
+    /*    /////////////////////////*/
+
+    .hero {
+        height: 60vh;
+        border-radius: 0;
+    }
+
+    .hero .write-up {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+    }
+
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .food-menu .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .food-menu .flex-wrap .col {
+        width: 45%;
+    }
+
+    .food-menu .col .write-up i {
+        display: none;
+    }
+
+}

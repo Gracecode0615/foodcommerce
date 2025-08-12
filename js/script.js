@@ -62,7 +62,7 @@ $('.action button').click(function () {
 
     // Home page click to view page
     $('.flex-wrap .col').on('click', function () {
-        window.location.href = 'viewpage.html';
+        window.location.href = 'viewpage';
     });
 
     // Close food popup (if using #foodPopup elsewhere)

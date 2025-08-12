@@ -1,3 +1,8 @@
+<?php
+//$pagetitle = "Menu List";
+$pagetitle = "Menu items";
+$cartshow = "";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +12,8 @@
     <meta name="viewport" content="width=device-width, intial-scale, maximum-scale=1, shrink-to-fit=no">
 
     
-    <link rel="stylesheet" href="style/style.css" type="text/css">
-    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css">
 
 
     <!--    bootstarp icon cdn-->
@@ -20,24 +25,10 @@
 </head>
 
 <body>
+    <?php include 'exe/heading.php'; ?>
+    
     <main>
-        <header>
-            <div class="head-icon">
-                <i class="bi bi-basket3"></i>
-                <span></span>
-            </div>
-
-
-            <span>Menu list</span>
-
-
-            <i class="bi bi-list"></i>
-
-        </header>
-
-        <!--        //////////////////////////////-->
-        <!--        //////////////////////////////-->
-
+        
         <div class="hero">
             <img src="https://media.istockphoto.com/id/1383962772/photo/nigerian-food.jpg?s=612x612&w=0&k=20&c=u-_1qwHBoY9Yh3alnsRbix6hxgl3_TXhT9lpEvlhH10=" alt="a plate of rice">
 
@@ -50,16 +41,18 @@
         <!--        /////////////////////////////-->
         <!--        /////////////////////////////-->
 
-
         <section class="food-menu">
+            
             <div class="flex-wrap">
+                
                 <div class="col">
                     <img src="https://i.pinimg.com/736x/e2/60/0c/e2600c40a1a2b4b38925ec41bb95001c.jpg">
 
                     <div class="write-up">
+                        <i class="bi bi-fork-knife"></i>
                         <p>Refuel Max Combo</p>
                         <span>Fiesta Rice| A one stop bite you would love and have a come back</span>
-                        <i class="bi bi-fork-knife"></i>
+                        
                     </div>
                 </div>
 
@@ -110,25 +103,11 @@
 
     </main>
 
+    <?php include 'exe/footer.php'; ?>
 
     <!--    /////////////////////////////////-->
     <!--    /////////////////////////////////-->
 
-
-    <footer>
-        <p>Foodcom.</p>
-        <p>Copyright &copy; 2025 Foodcom. Created by Gphix creative concept</p>
-        <ul class="social-links">
-            <li><i class="bi bi-facebook"></i></li>
-            <li><i class="bi bi-whatsapp"></i></li>
-            <li><i class="bi bi-twitter-x"></i></li>
-            <li><i class="bi bi-youtube"></i></li>
-
-
-        </ul>
-
-    </footer>
-    
     <script src="js/script.js"></script>
 </body>
 </html>

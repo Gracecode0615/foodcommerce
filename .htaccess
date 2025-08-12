@@ -1,0 +1,28 @@
+# Disable directory listing
+Options -Indexes
+
+# Custom 403 error page
+ErrorDocument 403 /images/403.php
+
+# Enable URL rewriting
+RewriteEngine On
+
+# 🔐 Force HTTPS only on foodcommerce.com.ng
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^foodcommerce\.com\.ng$ [NC]
+RewriteRule ^(.*)$ https://foodcommerce.com.ng/$1 [R=301,L]
+
+# 🚫 Redirect direct access to 403 page
+RewriteRule ^403.php$ /index.php [R=301]
+
+# 🧹 Clean URLs for PHP files
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^([^/]*)$ $1.php
+
+# 🧹 Clean URLs for HTML files
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^([^/]*)$ $1.html
+
+# Rewrite /explore/some-title to explore.php with query string intact
+RewriteRule ^explore/([^/]+)/?$ explore.php [L,QSA]
